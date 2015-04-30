@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `tbl_data_faker` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `value` varchar(200) DEFAULT NULL,
+  `value_name` varchar(200) DEFAULT NULL,
   `counter` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
