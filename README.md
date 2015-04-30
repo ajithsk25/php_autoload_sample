@@ -1,5 +1,5 @@
 # php_data_faker<br />
-Run the command git clone -b development 
+Run the command git clone -b development https://github.com/ajithsk25/php_data_faker.git
 ##Use php composer.phar to install the application<br /><br />
 1. Goto the project path in terminal and type php composer.phar install <br /><br />
 2. Create a mysql database for the project <br /><br />
