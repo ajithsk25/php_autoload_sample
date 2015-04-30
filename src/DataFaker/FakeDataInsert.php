@@ -33,7 +33,7 @@ class FakeDataInsert
     {
         $insertSql      = "INSERT INTO tbl_sample_data (value_name, counter) VALUES "; // creating multiple insert query
     	for($i = 1; $i <= $this->count; $i++) {
-    		$insertSql  .= "('value_$i', $i),";
+            $insertSql  .= "('value_$i', $i),";
     	}
     	$insertSql      = trim($insertSql, ','); // trim comma
         if ($this->_dbConn->executeQuery($insertSql)) {
