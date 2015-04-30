@@ -14,9 +14,9 @@ if (php_sapi_name() == "cli") { // In cli-mode
 	$count		= $argv[5];
 	
 	if ($hostname && $username && $password && $database && $count) { 
-		$dbConn 			    = new SQL($hostname, $database, $username, $password);
-		$fakeDataInsert 		= new FakeDataInsert($dbConn);
-		$fakeDataInsert->count 	= $count;
+		$dbConn                 = new SQL($hostname, $database, $username, $password);
+		$fakeDataInsert         = new FakeDataInsert($dbConn);
+		$fakeDataInsert->count  = $count;
 		$fakeDataInsert->insertFakeData();
 	} else {
 		echo "\n Please enter the command in terminal with following format \n\n-\t php app.php <hostname> <username> <password> <database> <limit> \n";
