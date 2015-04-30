@@ -15,7 +15,7 @@ if (php_sapi_name() == "cli") { // In cli-mode
 	
 	if ($hostname && $username && $password && $database && $count) {
 	
-		$dbConn 			= new SQL($hostname, $database, $username, $password);
+		$dbConn 		= new SQL($hostname, $database, $username, $password);
 		$dataInsert 		= new DataInsert($dbConn);
 		$dataInsert->count 	= $count;
 		$dataInsert->insertData();
