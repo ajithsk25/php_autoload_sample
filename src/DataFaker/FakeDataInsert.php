@@ -26,9 +26,9 @@ class FakeDataInsert
     	$this->_dbConn 	= $dbConn;	
     }
     
-	/**
-	* Inserts fake data based on the count
-	*/
+    /**
+    * Inserts fake data based on the count
+    */
     public function insertFakeData()
     {
         $insertSql      = "INSERT INTO tbl_sample_data (value_name, counter) VALUES "; // creating multiple insert query
