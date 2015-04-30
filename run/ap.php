@@ -9,7 +9,7 @@ if (php_sapi_name() == "cli") { // In cli-mode
 	// get parameters from terminal
 	$hostname	= $argv[1];
 	$username	= $argv[2];
-	$password   = $argv[3];
+	$password  	= $argv[3];
 	$database	= $argv[4];
 	$count		= $argv[5];
 	
