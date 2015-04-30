@@ -31,11 +31,11 @@ class FakeDataInsert
 	*/
     public function insertFakeData()
     {
-		$insertSql		= "INSERT INTO tbl_sample_data (value_name, counter) VALUES "; // creating multiple insert query
+		$insertSql      = "INSERT INTO tbl_sample_data (value_name, counter) VALUES "; // creating multiple insert query
     	for($i = 1; $i <= $this->count; $i++) {
-    		$insertSql 	.= "('value_$i', $i),";
+    		$insertSql  .= "('value_$i', $i),";
     	}
-    	$insertSql		= trim($insertSql, ','); // trim comma
+    	$insertSql      = trim($insertSql, ','); // trim comma
     	if ($this->_dbConn->executeQuery($insertSql)) {
 			echo "\n $this->count data are inserted.\n";
 		} else {
