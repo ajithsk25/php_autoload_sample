@@ -8,23 +8,23 @@ namespace DataFaker;
 
 class FakeDataInsert
 {
-	/**
-	* Database connection variable
-	*/
-	private $_dbConn;
-	
-	/**
-	* Database connection variable
-	*/
-	public $count;
-
-	/**
-	* Initialize the class variables 
-	*/
-	public function __construct($dbConn)
-	{
-		$this->_dbConn 	= $dbConn;	
-	}
+    /**
+    * Database connection variable
+    */
+    private $_dbConn;
+    
+    /**
+    * Database connection variable
+    */
+    public $count;
+    
+    /**
+    * Initialize the class variables 
+    */
+    public function __construct($dbConn)
+    {
+    	$this->_dbConn 	= $dbConn;	
+    }
     
 	/**
 	* Inserts fake data based on the count
@@ -36,10 +36,10 @@ class FakeDataInsert
     		$insertSql  .= "('value_$i', $i),";
     	}
     	$insertSql      = trim($insertSql, ','); // trim comma
-    	if ($this->_dbConn->executeQuery($insertSql)) {
-			echo "\n $this->count data are inserted.\n";
-		} else {
-			echo "\n Data cannot be inserted.\n";
-		}
+        if ($this->_dbConn->executeQuery($insertSql)) {
+            echo "\n $this->count data are inserted.\n";
+        } else {
+            echo "\n Data cannot be inserted.\n";
+        }
     }
 }
