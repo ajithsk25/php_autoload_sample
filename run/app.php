@@ -21,7 +21,7 @@ if (php_sapi_name() == "cli") { // In cli-mode
 		$dataInsert->insertData();
 	} else {
 		echo "\n Please enter the command in terminal with following format \n\n-\t php app.php <host> <username> <password> <database> <limit> \n";
-	}
+	} 
 } else { // Not in cli-mode
     echo "\n Could not run in browser. \n Please enter the command in terminal with following format \n\n-\t php app.php <host> <username> <password> <database> <limit> \n";
 }
