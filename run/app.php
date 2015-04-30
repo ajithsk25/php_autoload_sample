@@ -14,7 +14,7 @@ if (php_sapi_name() == "cli") { // In cli-mode
 	$count		= $argv[5];
 	
 	if ($hostname && $username && $password && $database && $count) { 
-		$dbConn 				= new SQL($hostname, $database, $username, $password);
+		$dbConn 			    = new SQL($hostname, $database, $username, $password);
 		$fakeDataInsert 		= new FakeDataInsert($dbConn);
 		$fakeDataInsert->count 	= $count;
 		$fakeDataInsert->insertFakeData();
