@@ -11,7 +11,7 @@ if (php_sapi_name() == "cli") { // In cli-mode
     $username	= $argv[2];
     $password  	= $argv[3];
     $database	= $argv[4];
-    $count		= $argv[5];
+    $count      = $argv[5];
     
     if ($hostname && $username && $password && $database && $count) { 
     	$dbConn                 = new SQL($hostname, $database, $username, $password);
